@@ -402,8 +402,13 @@ function App() {
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (!element) return;
+    const triggers = ScrollTrigger.getAll();
+    const st = triggers.find(t => t.trigger === element);
+    if (st) {
+      window.scrollTo({ top: st.start, behavior: 'smooth' });
+    } else {
+      window.scrollTo({ top: element.offsetTop, behavior: 'smooth' });
     }
   };
 
@@ -802,7 +807,7 @@ function App() {
       </section>
 
       {/* Section 9: Contact */}
-      <section className="contact-section relative bg-[#F4F1EC] py-[8vh] z-[80]">
+      <section id="contact" className="contact-section relative bg-[#F4F1EC] py-[8vh] z-[80]">
         <div className="px-[6vw] flex">
           {/* Photo card */}
           <div className="contact-photo w-[44vw] h-[72vh] rounded-[28px] overflow-hidden">
@@ -848,7 +853,7 @@ function App() {
       </section>
 
       {/* Section 9: Footer */}
-      <footer id="contact" className="relative bg-[#F4F1EC] py-[3vh] z-[90]">
+      <footer className="relative bg-[#F4F1EC] py-[3vh] z-[90]">
         <div className="text-center">
           <p className="text-[#0B0D10] text-sm mb-2">© 2026 Kaustav Ghosh</p>
           <p className="text-[#9a9d95] text-xs mb-6">Built with care. No trackers.</p>
