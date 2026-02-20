@@ -736,7 +736,72 @@ function App() {
         </div>
       </section>
 
-      {/* Section 8: Contact */}
+      {/* Section 8: Education & Awards */}
+      <section className="relative bg-[#0B0D10] py-[10vh] z-[75]">
+        <div className="px-[6vw] mb-12">
+          <h2 className="text-[clamp(34px,3.6vw,52px)] font-medium text-[#F6F7F9] leading-[1.0] tracking-[-0.01em] mb-4">
+            Education & Awards
+          </h2>
+          <p className="text-[#A7ACB5] text-base max-w-[46vw]">
+            Where I studied, and what I picked up along the way.
+          </p>
+        </div>
+
+        {/* Education */}
+        <div className="space-y-[2.2vh] mb-[4vh]">
+          {[
+            {
+              title: 'MSc Advanced Computer Science',
+              sub: 'University of Exeter · #155 World Ranking · Exeter, UK · 2022–2023',
+              note: 'First Class with Merit (2:1) — Generative AI, HPC, Data Science. Part of DebSoc Core Committee.',
+            },
+            {
+              title: 'B.Tech Electrical Engineering',
+              sub: 'Christ University · Mumbai, India · 2015–2019',
+              note: 'GPA 3.61 — Led MSME flagship events for the Computer Society of India.',
+            },
+          ].map((item, i) => (
+            <div key={i} className="reading-item card-dark-sm w-[88vw] mx-[6vw] flex items-center px-8 py-6 group">
+              <div className="flex-1">
+                <h3 className="text-[#F6F7F9] font-medium text-lg mb-1">{item.title}</h3>
+                <p className="text-[#FF4D2E] text-xs font-mono uppercase tracking-widest mb-2">{item.sub}</p>
+                <p className="text-[#A7ACB5] text-sm">{item.note}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Awards */}
+        <div className="space-y-[2.2vh]">
+          {[
+            {
+              title: 'CSR Excellence Award',
+              sub: 'TresVista · Aug 2020',
+              note: 'Contributed 460+ volunteer hours supporting Endeavor Global.',
+            },
+            {
+              title: 'TCS CodeVita Finalist',
+              sub: 'Tata Consultancy Services · 2017',
+              note: "Ranked highly in India's premier competitive coding competition.",
+            },
+            {
+              title: 'Wiznet International Competition — 3rd Place',
+              sub: 'Wiznet · Aug 2018',
+              note: 'Awarded for RFID-based Air Baggage Tracker system.',
+            },
+          ].map((item, i) => (
+            <div key={i} className="reading-item card-dark-sm w-[88vw] mx-[6vw] flex items-center px-8 py-6 group">
+              <div className="flex-1">
+                <h3 className="text-[#F6F7F9] font-medium text-lg mb-1">{item.title}</h3>
+                <p className="text-[#FF4D2E] text-xs font-mono uppercase tracking-widest mb-2">{item.sub}</p>
+                <p className="text-[#A7ACB5] text-sm">{item.note}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Section 9: Contact */}
       <section className="contact-section relative bg-[#F4F1EC] py-[14vh] z-[80]">
         <div className="px-[6vw] flex">
           {/* Photo card */}
