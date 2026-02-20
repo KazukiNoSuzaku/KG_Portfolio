@@ -1,7 +1,7 @@
 import { useEffect, useRef, useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowRight, Mail, Linkedin, ExternalLink, BookOpen, FileText, Cpu, Phone } from 'lucide-react';
+import { ArrowRight, Mail, Linkedin, ExternalLink, BookOpen, FileText, Cpu, Phone, Github } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -452,12 +452,12 @@ function App() {
             Kaustav Ghosh
           </h1>
           <p className="text-[clamp(18px,2vw,24px)] text-[#A7ACB5] font-medium mb-3">
-            Product Manager • GenAI Engineer
+            GenAI Engineer • Systems Builder
           </p>
           <div className="w-[72px] h-[3px] bg-[#FF4D2E] mb-6" />
           <p className="text-[#A7ACB5] text-base leading-relaxed max-w-[32vw] mb-8">
-            I turn ambiguity into product direction—shipping AI-powered features, improving retention, 
-            and building systems that scale.
+            I build AI systems that ship — RAG pipelines, automation tools, and enterprise intelligence solutions
+            that turn complex requirements into working software.
           </p>
           <div className="flex items-center gap-6">
             <button 
@@ -485,7 +485,7 @@ function App() {
             Featured work
           </h2>
           <p className="text-[#A7ACB5] text-base mb-6">
-            Three launches—retention, infrastructure, and AI.
+            Three builds—enterprise AI, automation, and research.
           </p>
           <button className="text-link flex items-center gap-2">
             Explore the index
@@ -496,43 +496,43 @@ function App() {
         {/* Project cards */}
         <div className="featured-card-1 absolute left-[36vw] top-[14vh] w-[18vw] h-[72vh] card-dark z-20 group cursor-pointer">
           <div className="h-[78%] overflow-hidden">
-            <img 
-              src="/project_onboarding.jpg" 
-              alt="Onboarding Rewrite" 
+            <img
+              src="/project_onboarding.jpg"
+              alt="Enterprise RAG Pipeline"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
           <div className="h-[22%] px-5 py-4 flex flex-col justify-center">
-            <h3 className="text-[#F6F7F9] font-medium text-lg mb-1">Onboarding Rewrite</h3>
-            <span className="micro-label">Retention</span>
+            <h3 className="text-[#F6F7F9] font-medium text-lg mb-1">Enterprise RAG Pipeline</h3>
+            <span className="micro-label">GenAI</span>
           </div>
         </div>
 
         <div className="featured-card-2 absolute left-[56vw] top-[14vh] w-[18vw] h-[72vh] card-dark z-20 group cursor-pointer">
           <div className="h-[78%] overflow-hidden">
-            <img 
-              src="/project_designsystem.jpg" 
-              alt="Design System" 
+            <img
+              src="/project_designsystem.jpg"
+              alt="HVAC AI Automation"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
           <div className="h-[22%] px-5 py-4 flex flex-col justify-center">
-            <h3 className="text-[#F6F7F9] font-medium text-lg mb-1">Design System</h3>
-            <span className="micro-label">Platform</span>
+            <h3 className="text-[#F6F7F9] font-medium text-lg mb-1">HVAC AI Automation</h3>
+            <span className="micro-label">Automation</span>
           </div>
         </div>
 
         <div className="featured-card-3 absolute left-[76vw] top-[14vh] w-[18vw] h-[72vh] card-dark z-20 group cursor-pointer">
           <div className="h-[78%] overflow-hidden">
-            <img 
-              src="/project_ai_assistant.jpg" 
-              alt="AI Assistant" 
+            <img
+              src="/project_ai_assistant.jpg"
+              alt="Prompt Optimization Research"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
           <div className="h-[22%] px-5 py-4 flex flex-col justify-center">
-            <h3 className="text-[#F6F7F9] font-medium text-lg mb-1">AI Assistant</h3>
-            <span className="micro-label">GenAI</span>
+            <h3 className="text-[#F6F7F9] font-medium text-lg mb-1">Prompt Optimization Research</h3>
+            <span className="micro-label">Research</span>
           </div>
         </div>
 
@@ -553,10 +553,10 @@ function App() {
 
         <div className="space-y-[2.2vh]">
           {[
-            { title: 'Checkout Flow', desc: 'Reduced friction, increased completion.', tags: ['UX', 'Metrics'], icon: <Cpu className="w-5 h-5" /> },
-            { title: 'Analytics Overhaul', desc: 'Rebuilt dashboards for clarity and action.', tags: ['Data', 'Platform'], icon: <FileText className="w-5 h-5" /> },
-            { title: 'Mobile Navigation', desc: 'Simplified IA for core actions.', tags: ['Mobile', 'IA'], icon: <ExternalLink className="w-5 h-5" /> },
-            { title: 'API Documentation', desc: 'Developer experience upgrade.', tags: ['DX', 'Content'], icon: <BookOpen className="w-5 h-5" /> },
+            { title: 'Spotify Genre Network Analysis', desc: 'Mapped 1000s of artists using Gephi & Python to identify genre clusters and cross-genre influence patterns.', tags: ['Data Science', 'Python', 'Gephi'], icon: <Cpu className="w-5 h-5" /> },
+            { title: 'NLP Job Search Algorithm', desc: 'Built a local job matching engine using Word2Vec for a client in Papua New Guinea, deployed via Django.', tags: ['NLP', 'Django', 'AWS'], icon: <FileText className="w-5 h-5" /> },
+            { title: 'Time-Series Price Forecasting', desc: 'Delivered pricing optimization model for a US dairy company using time-series forecasting at TresVista.', tags: ['Finance', 'Python', 'Forecasting'], icon: <ExternalLink className="w-5 h-5" /> },
+            { title: 'RFID Air Baggage Tracker', desc: 'Secured 3rd place at Wiznet International Competition 2018 for an RFID-based baggage tracking system.', tags: ['IoT', 'Hardware', 'Award'], icon: <BookOpen className="w-5 h-5" /> },
           ].map((item, i) => (
             <div key={i} className="work-item card-dark-sm w-[88vw] mx-[6vw] h-[18vh] flex items-center cursor-pointer group hover:translate-y-[-4px] transition-transform duration-300">
               <div className="w-[18vw] h-full bg-[#1a1d24] flex items-center justify-center">
@@ -589,11 +589,11 @@ function App() {
             <div className="w-1.5 h-1.5 rounded-full bg-[#FF4D2E] mx-auto mt-4" />
           </div>
           <p className="manifesto-text text-[clamp(28px,3.5vw,48px)] font-medium text-[#F6F7F9] leading-[1.15] tracking-[-0.01em] mb-8">
-            I believe product work is decision-making under uncertainty—anchored by taste, 
-            validated by usage, and shipped with restraint.
+            I've moved from data to research to engineering — and the through-line is the same:
+            build systems that are honest about what they know, and useful in ways that last.
           </p>
           <p className="manifesto-sub text-[#A7ACB5] text-lg">
-            Clear beats clever. Systems beat one-offs. Users remember how it feels.
+            Accuracy over hype. Pipelines over prototypes. Impact over impressions.
           </p>
         </div>
         <div className="manifesto-numeral bg-numeral absolute right-[4vw] bottom-[6vh] z-0">02</div>
@@ -666,7 +666,7 @@ function App() {
             Writing
           </h2>
           <p className="text-[#A7ACB5] text-base mb-6">
-            Notes on product, AI, and building teams.
+            Research, case studies, and notes on AI engineering.
           </p>
           <button className="text-link flex items-center gap-2">
             Browse all essays
@@ -677,29 +677,29 @@ function App() {
         {/* Writing cards */}
         <div className="writing-card-1 absolute left-[36vw] top-[14vh] w-[28vw] h-[72vh] card-dark z-20 group cursor-pointer">
           <div className="h-[65%] overflow-hidden">
-            <img 
-              src="/writing_retention.jpg" 
-              alt="The Retention Map" 
+            <img
+              src="/writing_retention.jpg"
+              alt="Prompt Optimization for Generative Art"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
           <div className="h-[35%] px-6 py-6 flex flex-col justify-center">
-            <h3 className="text-[#F6F7F9] font-medium text-2xl mb-3">The Retention Map</h3>
-            <p className="text-[#A7ACB5] text-base leading-relaxed">A framework for diagnosing churn and building habits.</p>
+            <h3 className="text-[#F6F7F9] font-medium text-2xl mb-3">Prompt Optimization for Generative Art</h3>
+            <p className="text-[#A7ACB5] text-base leading-relaxed">MSc research: an algorithm to improve text-to-image output quality and visual coherence in MidJourney.</p>
           </div>
         </div>
 
         <div className="writing-card-2 absolute left-[66vw] top-[14vh] w-[28vw] h-[72vh] card-dark z-20 group cursor-pointer">
           <div className="h-[65%] overflow-hidden">
-            <img 
-              src="/writing_prompts.jpg" 
-              alt="Prompt Engineering for PMs" 
+            <img
+              src="/writing_prompts.jpg"
+              alt="Building RAG Systems for the Enterprise"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
           <div className="h-[35%] px-6 py-6 flex flex-col justify-center">
-            <h3 className="text-[#F6F7F9] font-medium text-2xl mb-3">Prompt Engineering for PMs</h3>
-            <p className="text-[#A7ACB5] text-base leading-relaxed">How to prototype with LLMs and ship AI features.</p>
+            <h3 className="text-[#F6F7F9] font-medium text-2xl mb-3">Building RAG Systems for the Enterprise</h3>
+            <p className="text-[#A7ACB5] text-base leading-relaxed">Lessons from deploying secure document intelligence pipelines with LangChain and Teams integration.</p>
           </div>
         </div>
 
@@ -720,10 +720,10 @@ function App() {
 
         <div className="space-y-[2.2vh]">
           {[
-            { title: 'Inspired', author: 'Marty Cagan', note: 'Product discovery fundamentals.' },
-            { title: 'The Lean Startup', author: 'Eric Ries', note: 'Validated learning loops.' },
-            { title: 'Attention Is All You Need', author: 'Vaswani et al.', note: 'Transformers paper—core concepts for AI products.' },
-            { title: 'Shape Up', author: 'Basecamp', note: 'Appetite-based planning.' },
+            { title: 'Attention Is All You Need', author: 'Vaswani et al.', note: 'The transformer paper — foundational to everything I build.' },
+            { title: 'Designing Data-Intensive Applications', author: 'Martin Kleppmann', note: 'How to think about systems that need to scale.' },
+            { title: 'Build', author: 'Tony Fadell', note: 'On taste, craft, and shipping things that matter.' },
+            { title: 'The Pragmatic Programmer', author: 'Hunt & Thomas', note: 'Career-defining lessons in writing better software.' },
           ].map((item, i) => (
             <div key={i} className="reading-item card-dark-sm w-[88vw] mx-[6vw] h-[14vh] flex items-center px-8 cursor-pointer group hover:translate-y-[-4px] transition-transform duration-300">
               <div className="flex-1">
@@ -772,6 +772,10 @@ function App() {
               <a href="tel:+919477304065" className="flex items-center gap-3 text-[#5a5d65] hover:text-[#0B0D10] transition-colors">
                 <Phone className="w-4 h-4" />
                 <span className="text-sm">+91 9477304065</span>
+              </a>
+              <a href="https://github.com/KazukiNoSuzaku" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[#5a5d65] hover:text-[#0B0D10] transition-colors">
+                <Github className="w-4 h-4" />
+                <span className="text-sm">github.com/KazukiNoSuzaku</span>
               </a>
             </div>
           </div>
