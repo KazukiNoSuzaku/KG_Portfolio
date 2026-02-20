@@ -81,6 +81,7 @@ function App() {
       // Featured Work section
       const featuredTl = gsap.timeline({
         scrollTrigger: {
+          id: 'work',
           trigger: featuredRef.current,
           start: 'top top',
           end: '+=130%',
@@ -147,6 +148,7 @@ function App() {
       // Manifesto section
       const manifestoTl = gsap.timeline({
         scrollTrigger: {
+          id: 'manifesto',
           trigger: manifestoRef.current,
           start: 'top top',
           end: '+=130%',
@@ -250,6 +252,7 @@ function App() {
       // Writing section
       const writingTl = gsap.timeline({
         scrollTrigger: {
+          id: 'writing',
           trigger: writingRef.current,
           start: 'top top',
           end: '+=130%',
@@ -401,15 +404,14 @@ function App() {
   }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (!element) return;
-    const triggers = ScrollTrigger.getAll();
-    const st = triggers.find(t => t.trigger === element);
+    const st = ScrollTrigger.getById(id);
     if (st) {
       window.scrollTo({ top: st.start, behavior: 'smooth' });
-    } else {
-      window.scrollTo({ top: element.offsetTop, behavior: 'smooth' });
+      return;
     }
+    const element = document.getElementById(id);
+    if (!element) return;
+    window.scrollTo({ top: element.offsetTop, behavior: 'smooth' });
   };
 
   return (
