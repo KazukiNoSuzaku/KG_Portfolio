@@ -414,7 +414,7 @@ function App() {
       
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-5 flex justify-between items-center">
-        <div className="text-[#F6F7F9] font-semibold text-lg tracking-tight">KG</div>
+        <a href="https://www.linkedin.com/in/kaustav-ghosh-b978a6119/" target="_blank" rel="noopener noreferrer" className="text-[#F6F7F9] font-semibold text-lg tracking-tight hover:text-[#FF4D2E] transition-colors">KG</a>
         <div className="flex gap-8">
           <button onClick={() => scrollToSection('work')} className="text-[#A7ACB5] hover:text-[#F6F7F9] text-sm font-medium transition-colors">Work</button>
           <button onClick={() => scrollToSection('writing')} className="text-[#A7ACB5] hover:text-[#F6F7F9] text-sm font-medium transition-colors">Writing</button>
