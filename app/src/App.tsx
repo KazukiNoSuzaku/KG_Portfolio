@@ -440,8 +440,8 @@ function App() {
         {/* Photo card */}
         <div className="hero-photo absolute left-[6vw] top-[14vh] w-[44vw] h-[72vh] rounded-[28px] overflow-hidden z-20">
           <img 
-            src="/hero_portrait.jpg" 
-            alt="Kaustav Ghosh" 
+            src="/hero_portrait.png"
+            alt="Kaustav Ghosh"
             className="w-full h-full object-cover"
           />
         </div>
@@ -675,7 +675,7 @@ function App() {
         </div>
 
         {/* Writing cards */}
-        <div className="writing-card-1 absolute left-[36vw] top-[14vh] w-[28vw] h-[72vh] card-dark z-20 group cursor-pointer">
+        <a href="/KAUSTAV_GHOSH_MASTERS.pdf" target="_blank" rel="noopener noreferrer" className="writing-card-1 absolute left-[36vw] top-[14vh] w-[28vw] h-[72vh] card-dark z-20 group cursor-pointer">
           <div className="h-[65%] overflow-hidden">
             <img
               src="/writing_retention.jpg"
@@ -687,7 +687,7 @@ function App() {
             <h3 className="text-[#F6F7F9] font-medium text-2xl mb-3">Prompt Optimization for Generative Art</h3>
             <p className="text-[#A7ACB5] text-base leading-relaxed">MSc research: an algorithm to improve text-to-image output quality and visual coherence in MidJourney.</p>
           </div>
-        </div>
+        </a>
 
         <div className="writing-card-2 absolute left-[66vw] top-[14vh] w-[28vw] h-[72vh] card-dark z-20 group cursor-pointer">
           <div className="h-[65%] overflow-hidden">
