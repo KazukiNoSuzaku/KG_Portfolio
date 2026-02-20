@@ -541,8 +541,8 @@ function App() {
       </section>
 
       {/* Section 3: Work Index */}
-      <section className="relative bg-[#0B0D10] py-[10vh] z-30">
-        <div className="px-[6vw] mb-12">
+      <section className="relative bg-[#0B0D10] py-[5vh] z-30">
+        <div className="px-[6vw] mb-6">
           <h2 className="text-[clamp(34px,3.6vw,52px)] font-medium text-[#F6F7F9] leading-[1.0] tracking-[-0.01em] mb-4">
             Work index
           </h2>
@@ -551,14 +551,14 @@ function App() {
           </p>
         </div>
 
-        <div className="space-y-[2.2vh]">
+        <div className="space-y-[1vh]">
           {[
             { title: 'Spotify Genre Network Analysis', desc: 'Mapped 1000s of artists using Gephi & Python to identify genre clusters and cross-genre influence patterns.', tags: ['Data Science', 'Python', 'Gephi'], icon: <Cpu className="w-5 h-5" /> },
             { title: 'NLP Job Search Algorithm', desc: 'Built a local job matching engine using Word2Vec for a client in Papua New Guinea, deployed via Django.', tags: ['NLP', 'Django', 'AWS'], icon: <FileText className="w-5 h-5" /> },
             { title: 'Time-Series Price Forecasting', desc: 'Delivered pricing optimization model for a US dairy company using time-series forecasting at TresVista.', tags: ['Finance', 'Python', 'Forecasting'], icon: <ExternalLink className="w-5 h-5" /> },
             { title: 'RFID Air Baggage Tracker', desc: 'Secured 3rd place at Wiznet International Competition 2018 for an RFID-based baggage tracking system.', tags: ['IoT', 'Hardware', 'Award'], icon: <BookOpen className="w-5 h-5" /> },
           ].map((item, i) => (
-            <div key={i} className="work-item card-dark-sm w-[88vw] mx-[6vw] h-[18vh] flex items-center cursor-pointer group hover:translate-y-[-4px] transition-transform duration-300">
+            <div key={i} className="work-item card-dark-sm w-[88vw] mx-[6vw] h-[13vh] flex items-center cursor-pointer group hover:translate-y-[-4px] transition-transform duration-300">
               <div className="w-[18vw] h-full bg-[#1a1d24] flex items-center justify-center">
                 <div className="text-[#A7ACB5] group-hover:text-[#FF4D2E] transition-colors">
                   {item.icon}
@@ -708,8 +708,8 @@ function App() {
       </section>
 
       {/* Section 7: Reading List */}
-      <section className="relative bg-[#0B0D10] py-[10vh] z-[70]">
-        <div className="px-[6vw] mb-12">
+      <section className="relative bg-[#0B0D10] py-[5vh] z-[70]">
+        <div className="px-[6vw] mb-6">
           <h2 className="text-[clamp(34px,3.6vw,52px)] font-medium text-[#F6F7F9] leading-[1.0] tracking-[-0.01em] mb-4">
             Reading list
           </h2>
@@ -718,14 +718,14 @@ function App() {
           </p>
         </div>
 
-        <div className="space-y-[2.2vh]">
+        <div className="space-y-[1vh]">
           {[
             { title: 'The Prince', author: 'Niccolò Machiavelli', note: 'On power, pragmatism, and why good intentions aren\'t enough.' },
             { title: 'The Brothers Karamazov', author: 'Fyodor Dostoevsky', note: 'Faith, doubt, and the weight of moral responsibility.' },
             { title: 'The Trial', author: 'Franz Kafka', note: 'A reminder that systems can be opaque — and why that matters.' },
             { title: 'Attention Is All You Need', author: 'Vaswani et al.', note: 'The transformer paper — foundational to everything I build.' },
           ].map((item, i) => (
-            <div key={i} className="reading-item card-dark-sm w-[88vw] mx-[6vw] h-[14vh] flex items-center px-8 cursor-pointer group hover:translate-y-[-4px] transition-transform duration-300">
+            <div key={i} className="reading-item card-dark-sm w-[88vw] mx-[6vw] h-[10vh] flex items-center px-8 cursor-pointer group hover:translate-y-[-4px] transition-transform duration-300">
               <div className="flex-1">
                 <h3 className="text-[#F6F7F9] font-medium text-lg mb-1">{item.title}</h3>
                 <p className="text-[#A7ACB5] text-sm">{item.author} — {item.note}</p>
@@ -737,8 +737,8 @@ function App() {
       </section>
 
       {/* Section 8: Education & Awards */}
-      <section className="relative bg-[#0B0D10] py-[10vh] z-[75]">
-        <div className="px-[6vw] mb-12">
+      <section className="relative bg-[#0B0D10] py-[5vh] z-[75]">
+        <div className="px-[6vw] mb-6">
           <h2 className="text-[clamp(34px,3.6vw,52px)] font-medium text-[#F6F7F9] leading-[1.0] tracking-[-0.01em] mb-4">
             Education & Awards
           </h2>
@@ -748,7 +748,7 @@ function App() {
         </div>
 
         {/* Education */}
-        <div className="space-y-[2.2vh] mb-[4vh]">
+        <div className="space-y-[1vh] mb-[2vh]">
           {[
             {
               title: 'MSc Advanced Computer Science',
@@ -772,7 +772,7 @@ function App() {
         </div>
 
         {/* Awards */}
-        <div className="space-y-[2.2vh]">
+        <div className="space-y-[1vh]">
           {[
             {
               title: 'CSR Excellence Award',
@@ -802,7 +802,7 @@ function App() {
       </section>
 
       {/* Section 9: Contact */}
-      <section className="contact-section relative bg-[#F4F1EC] py-[14vh] z-[80]">
+      <section className="contact-section relative bg-[#F4F1EC] py-[8vh] z-[80]">
         <div className="px-[6vw] flex">
           {/* Photo card */}
           <div className="contact-photo w-[44vw] h-[72vh] rounded-[28px] overflow-hidden">
@@ -848,7 +848,7 @@ function App() {
       </section>
 
       {/* Section 9: Footer */}
-      <footer id="contact" className="relative bg-[#F4F1EC] py-[6vh] z-[90]">
+      <footer id="contact" className="relative bg-[#F4F1EC] py-[3vh] z-[90]">
         <div className="text-center">
           <p className="text-[#0B0D10] text-sm mb-2">© 2026 Kaustav Ghosh</p>
           <p className="text-[#9a9d95] text-xs mb-6">Built with care. No trackers.</p>
