@@ -791,7 +791,7 @@ function App() {
             <button onClick={() => scrollToSection('work')} className="text-[#5a5d65] hover:text-[#0B0D10] text-sm transition-colors">Work</button>
             <button onClick={() => scrollToSection('writing')} className="text-[#5a5d65] hover:text-[#0B0D10] text-sm transition-colors">Writing</button>
             <button onClick={() => scrollToSection('contact')} className="text-[#5a5d65] hover:text-[#0B0D10] text-sm transition-colors">Contact</button>
-            <a href="/Kaustav_Ghosh_CV_2026.docx" className="text-[#5a5d65] hover:text-[#0B0D10] text-sm transition-colors">Resume</a>
+            <a href="/Kaustav_Ghosh_CV_2026.docx" className="text-[#5a5d65] hover:text-[#0B0D10] text-sm transition-colors">CV</a>
           </div>
         </div>
       </footer>
