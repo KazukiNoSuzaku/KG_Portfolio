@@ -424,6 +424,12 @@ function App() {
 
       {/* Section 1: Hero */}
       <section ref={heroRef} className="section-pinned bg-[#0B0D10] z-10">
+        {/* Background image */}
+        <img
+          src="/hero_bg.jpg"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover z-0 opacity-40"
+        />
         <div className="vignette" />
         
         {/* Vertical micro label */}
