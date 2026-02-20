@@ -1,7 +1,7 @@
 import { useEffect, useRef, useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowRight, Mail, Linkedin, ExternalLink, BookOpen, FileText, Cpu } from 'lucide-react';
+import { ArrowRight, Mail, Linkedin, ExternalLink, BookOpen, FileText, Cpu, Phone } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -759,9 +759,13 @@ function App() {
                 <Mail className="w-4 h-4" />
                 <span className="text-sm">ghosh1k4@gmail.com</span>
               </a>
-              <a href="https://linkedin.com/in/kaustav-ghosh" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[#5a5d65] hover:text-[#0B0D10] transition-colors">
+              <a href="https://www.linkedin.com/in/kaustav-ghosh-b978a6119/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[#5a5d65] hover:text-[#0B0D10] transition-colors">
                 <Linkedin className="w-4 h-4" />
-                <span className="text-sm">linkedin.com/in/kaustav-ghosh</span>
+                <span className="text-sm">linkedin.com/in/kaustav-ghosh-b978a6119</span>
+              </a>
+              <a href="tel:+919477304065" className="flex items-center gap-3 text-[#5a5d65] hover:text-[#0B0D10] transition-colors">
+                <Phone className="w-4 h-4" />
+                <span className="text-sm">+91 9477304065</span>
               </a>
             </div>
           </div>
