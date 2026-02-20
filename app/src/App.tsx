@@ -413,7 +413,7 @@ function App() {
       <div className="grain-overlay" />
       
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-5 flex justify-between items-center">
+      <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-5 flex justify-between items-center backdrop-blur-sm bg-[#0B0D10]/60 border-b border-white/5">
         <a href="https://www.linkedin.com/in/kaustav-ghosh-b978a6119/" target="_blank" rel="noopener noreferrer" className="text-[#F6F7F9] font-semibold text-lg tracking-tight hover:text-[#FF4D2E] transition-colors">KG</a>
         <div className="flex gap-8">
           <button onClick={() => scrollToSection('work')} className="text-[#A7ACB5] hover:text-[#F6F7F9] text-sm font-medium transition-colors">Work</button>
@@ -547,7 +547,7 @@ function App() {
             Work index
           </h2>
           <p className="text-[#A7ACB5] text-base max-w-[46vw]">
-            A running list of product bets, systems, and experiments.
+            A running log of systems built, research done, and problems solved.
           </p>
         </div>
 
@@ -819,12 +819,12 @@ function App() {
               Let's build what's next.
             </h2>
             <p className="text-[#5a5d65] text-base leading-relaxed mb-8">
-              I'm open to product and AI leadership roles, advisory work, and ambitious side projects.
+              I'm open to GenAI engineering roles, research collaborations, and ambitious builds. If you're working on something hard, let's talk.
             </p>
-            <button className="px-6 py-3 rounded-full bg-[#0B0D10] text-[#F6F7F9] font-medium text-sm flex items-center gap-2 hover:bg-[#FF4D2E] transition-all duration-300 mb-10">
+            <a href="mailto:ghosh1k4@gmail.com" className="px-6 py-3 rounded-full bg-[#0B0D10] text-[#F6F7F9] font-medium text-sm flex items-center gap-2 hover:bg-[#FF4D2E] transition-all duration-300 mb-10 w-fit">
               Start a conversation
               <Mail className="w-4 h-4" />
-            </button>
+            </a>
             <div className="space-y-3">
               <a href="mailto:ghosh1k4@gmail.com" className="flex items-center gap-3 text-[#5a5d65] hover:text-[#0B0D10] transition-colors">
                 <Mail className="w-4 h-4" />
