@@ -720,10 +720,10 @@ function App() {
 
         <div className="space-y-[2.2vh]">
           {[
+            { title: 'The Prince', author: 'Niccolò Machiavelli', note: 'On power, pragmatism, and why good intentions aren\'t enough.' },
+            { title: 'The Brothers Karamazov', author: 'Fyodor Dostoevsky', note: 'Faith, doubt, and the weight of moral responsibility.' },
+            { title: 'The Trial', author: 'Franz Kafka', note: 'A reminder that systems can be opaque — and why that matters.' },
             { title: 'Attention Is All You Need', author: 'Vaswani et al.', note: 'The transformer paper — foundational to everything I build.' },
-            { title: 'Designing Data-Intensive Applications', author: 'Martin Kleppmann', note: 'How to think about systems that need to scale.' },
-            { title: 'Build', author: 'Tony Fadell', note: 'On taste, craft, and shipping things that matter.' },
-            { title: 'The Pragmatic Programmer', author: 'Hunt & Thomas', note: 'Career-defining lessons in writing better software.' },
           ].map((item, i) => (
             <div key={i} className="reading-item card-dark-sm w-[88vw] mx-[6vw] h-[14vh] flex items-center px-8 cursor-pointer group hover:translate-y-[-4px] transition-transform duration-300">
               <div className="flex-1">
